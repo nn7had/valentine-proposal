@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Floating Hearts Background -->
+        <div class="hearts-bg">
+            <div class="heart heart-1">❤️</div>
+            <div class="heart heart-2">💕</div>
+            <div class="heart heart-3">💖</div>
+            <div class="heart heart-4">💗</div>
+            <div class="heart heart-5">💝</div>
+            <div class="heart heart-6">❤️</div>
+            <div class="heart heart-7">🌹</div>
+            <div class="heart heart-8">✨</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content" id="mainContent">
+            <!-- Step 1: Welcome -->
+            <div class="step step-1 active" id="step1">
+                <h1 class="title">Salam necəsən?</h1>
+                <div class="message-box">
+                    <p>Sənə çox vacib söz deməliyəm...</p>
+                    <p>Hazırsan?? ✨</p>
+                </div>
+                <button class="next-btn" onclick="nextStep(2)">
+                    <span>💖</span> Hazıram
+                </button>
+            </div>
+
+            <!-- Step 2: Compliments -->
+            <div class="step step-2" id="step2">
+                <h2 class="subtitle">Sən mənim üçün çox özəlsən 🌟</h2>
+                <div class="compliments-container">
+                    <div class="compliment" style="animation-delay: 0.5s;">
+                        <span class="icon">👀</span>
+                        <p>Gözlərin ən gözəl mənzərədi</p>
+                    </div>
+                    <div class="compliment" style="animation-delay: 1s;">
+                        <span class="icon">😊</span>
+                        <p>Gülüşünü görəndə ürək döyüntüm sürətlənir</p>
+                    </div>
+                    <div class="compliment" style="animation-delay: 1.5s;">
+                        <span class="icon">✨</span>
+                        <p>Varlığın həyatımı rəngləndirir</p>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="nextStep(3)">
+                    <span>🌹</span> Dəvam et
+                </button>
+            </div>
+
+            <!-- Step 3: Feelings -->
+            <div class="step step-3" id="step3">
+                <h2 class="subtitle">Sənə qarşı hissetdiklərimi cümlələr ilə ifadə etmək çətindi 💝</h2>
+                <div class="feelings-container">
+                    <div class="feeling-card">
+                        <div class="heart-icon">💖</div>
+                        <p>Səninlə keçirdiyim hər vaxt çox gözəldi</p>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="nextStep(4)">
+                    <span>💕</span> Aha sonra?
+                </button>
+            </div>
+
+            <!-- Step 4: The Question -->
+            <div class="step step-4" id="step4">
+                <h2 class="subtitle">Məncə bizdən olar.. 💍</h2>
+                <div class="question-container">
+                    <div class="big-heart">💖</div>
+                    <h1 class="proposal-text">Bəs səncə?</h1>
+                    <div class="answer-buttons">
+                        <button class="answer-btn yes-btn" onclick="answerYes()">
+                            <span>💕</span> Məncədəəə
+                        </button>
+                        <button class="answer-btn no-btn" onclick="answerNo()" id="noBtn">
+                            <span>💔</span> Yox
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Celebration -->
+            <div class="step step-5" id="step5">
+                <div class="celebration-container">
+                    <h1 class="celebration-title">YAXŞI Kİ VARSANN 💕</h1>
+                    <div class="celebration-message">
+                        <p>Sənii çoxx sevirəmmm 💕</p>
+                    </div>
+                    <div class="celebration-hearts">
+                        <div class="big-celebration-heart">❤️</div>
+                        <div class="big-celebration-heart">💕</div>
+                        <div class="big-celebration-heart">💖</div>
+                    </div>
+                    <button class="restart-btn" onclick="restart()">
+                        <span>🔄</span> Təkrar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fireworks Container -->
+        <div class="fireworks-container" id="fireworksContainer"></div>
+        
+        <!-- Heart Explosion Container -->
+        <div class="explosion-container" id="explosionContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
